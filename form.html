@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <script src="scripts/script.js" defer></script>
+</head>
+<style>
+    body {
+        font-family: 'Titillium Web';
+    }
+</style>
+<body class="docs">
+    <header>
+        <div class="topheader">
+            <div class="logo">
+                <img src="/bilder/m2logo.svg" alt="m2logo">
+                <h1>M2</h1>
+            </div>
+            <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+                <svg fill="white" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                    <rect class="line top" width="90" height="10" x="10" y="20" rx="5"></rect>
+                    <rect class="line middle" width="90" height="10" x="10" y="45" rx="5"></rect>
+                    <rect class="line bottom" width="90" height="10" x="10" y="70" rx="5"></rect>
+                </svg>
+            </button>
+            <ul class="primary-navigation" id="primary-navigation">
+                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/Grunderna.html">Grunderna</a></li>
+                <li><a href="/Historia.html">Historia</a></li>
+                <li><a href="/DOM.html">DOM</a></li>
+                <li><a href="/Form.html" class="selected">Kontakta oss</a></li>
+                <li><a href="#om_mig">Om mig</a></li> 
+            </ul>
+        </div>
+    </header>
+    <main class="formMain">
+        <form action="https://formsubmit.co/viktor.johanssonnygren@elev.ga.ntig.se" method="post">
+            <fieldset>
+                <legend>Kontaktanledning</legend>
+                <div>
+                    <label for="radio1">Problem</label>
+                    <input type="radio" name="Vad behöver du hjälp med" id="radio1">
+                </div>
+                <div>
+                    <label for="radio2">Anlita oss</label>
+                    <input type="radio" name="Vad behöver du hjälp med" id="radio2">
+                </div>
+                <div>
+                    <label for="radio3">Annat</label>
+                    <input type="radio" name="Vad behöver du hjälp med" id="radio3">
+                </div>
+            </fieldset>
+            <br><label for="fnamn">Namn:</label><br>
+            <input type="text" name="Namn" id="fnamn" autocomplete="on" required><br>
+            <label for="epostadress">Epost:</label><br>
+            <input type="email" name="Epost" id="epostadress" autocomplete="on" required><br>
+            <label for="text">Beskrivning:</label><br>
+            <textarea class="description" type="text" name="Skriv" size="25"></textarea><br>
+            <input type="submit" name="Skicka">
+            <input type="reset" name="Rensa">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+        </form>
+    </main>
+</body>
+</html>

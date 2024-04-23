@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    background-color: rgb(231, 230, 230);
+}
+
+header{
+    background-color: black;
+}
+
+.topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 1rem;
+    color: white;
+}
+
+.primary-navigation a{
+    padding: 0.3125rem;
+}
+
+.logo h1{
+    font-weight: bold;
+}
+
+.history-logo{
+    max-width: 100%;
+}
+
+.primary-navigation{
+    gap: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    list-style: none;
+    display: flex;
+}
+
+.content p{
+    padding: 0.625rem;
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+.selected{
+    text-decoration: underline;
+}
+
+.history{
+    column-count: 2;
+    column-rule: 1px solid black;
+}
+
+.history p{
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.over{
+    display: flex;
+    min-height: 40%;
+    background-color: orchid;
+    justify-content: center;
+    padding-block: 3rem;
+    margin-bottom: 1rem;
+}
+
+.domUpper{
+    display: flex;
+    min-height: 40%;
+    background-color: grey;
+    justify-content: center;
+    padding-block: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hisHeader{
+    box-shadow: inset 0px -0.5rem 0.3125rem -0.25rem grey;
+}
+
+.inover{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: auto;
+    width: 60%;
+}
+
+header a{
+    color: white;
+}
+
+section{
+    margin-right: 1rem;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+section .content:nth-child(even){
+    background-color: lightgrey;
+}
+
+.list{
+    background-color: white;
+    box-shadow: 0 0.1875rem 0.375rem grey;
+    padding-block: 1rem;
+    color: rgb(154, 0, 154);
+    margin: 1rem;
+}
+
+.css{
+    padding-block: 0.625rem;
+}
+
+.html{
+    padding-inline: 0.625rem;
+}
+.categories{
+    list-style: upper-roman;
+    text-decoration: underline;
+}
+
+.list-header{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-align: left;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.content p{
+    padding: 0.625rem;
+    margin: 0;
+}
+
+.gruMain{
+    display: flex;
+}
+
+.m2Background{
+    margin: 0;
+    background-image: url(/bilder/rsz_1wesson-wang-y0_vfxohayg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.m2Main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.m2Main p, h2{
+    color: white;
+}
+
+.gruH2{
+    color: black;
+}
+
+.hamburger-button{
+    all: unset; 
+    display: none;
+}
+
+form{
+    margin-inline: auto;
+}
+
+main{
+    width: 60%;
+    margin-inline: auto;
+}
+
+fieldset{
+    width: 50%;
+}
+
+.thanks{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.description{
+    height: 12vh;
+    resize: none;
+}
+
+.domText{
+    column-count: 2;
+    column-rule: 1px solid black;
+}
+
+@media (width<480px){
+
+    .m2Main{
+        grid-template-columns: 1fr;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    .over{
+        min-height: 40%;
+    }
+
+    .inover{
+        width: 70%;
+    }
+    
+    .primary-navigation {
+        position: fixed;
+        top: 0;
+        inset: 0;
+
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        flex-direction: column;
+        
+        padding: 4rem 2rem;
+        
+        background: darkgray;
+        opacity: 0;
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out,
+                    opacity 250ms ease-in-out;
+    }
+
+    .primary-navigation.open {
+      transform: translateX(0);
+      opacity: 1;
+   }
+   
+   .hamburger-button{
+    display: block;
+   }
+
+   .gruNav{
+    display: none;
+   }
+ }

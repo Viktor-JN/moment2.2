@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grunderna</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <script src="scripts/script.js" defer></script>
+</head>
+<style>
+    body {
+        font-family: 'Titillium Web';
+    }
+</style>
+<body class="ground">
+    <header>
+        <div class="topheader">
+            <div class="logo">
+                <img src="/bilder/m2logo.svg" alt="m2logo">
+                <h1>M2</h1>
+            </div>
+            <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+                <svg fill="white" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                    <rect class="line top" width="90" height="10" x="10" y="20" rx="5"></rect>
+                    <rect class="line middle" width="90" height="10" x="10" y="45" rx="5"></rect>
+                    <rect class="line bottom" width="90" height="10" x="10" y="70" rx="5"></rect>
+                </svg>
+            </button>
+            <ul class="primary-navigation" id="primary-navigation">
+                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/Grunderna.html" class="selected">Grunderna</a></li>
+                <li><a href="/Historia.html">Historia</a></li>
+                <li><a href="/DOM.html">DOM</a></li>
+                <li><a href="/Form.html">Kontakta oss</a></li>
+                <li><a href="#om_mig">Om mig</a></li> 
+            </ul>
+        </div>
+    </header>
+    <main class="gruMain">
+        <section>
+            <div>
+                <h2 class="gruH2">HTML</h2>
+                <h3>STRUKTUR</h3>
+            </div>
+            <div class="content">
+                <p>&lt!DOCTYPE&gt</p><p>Definierar dokumenttypen och versionen av HTML-dokumentet.</p>
+            </div>
+            <div class="content">
+                <p>&ltHtml&gt</p><p>Huvudelementet som omger hela HTML-dokumentet.</p>
+            </div>
+            <div class="content">
+                <p>&ltHead&gt</p><p>Innehåller metadata om dokumentet, såsom titel, länkar till externa resurser och stilinformation.</p>
+            </div>
+            <div class="content">
+                <p>&ltTitle&gt</p><p>Används för att ange titeln på dokumentet, vilket visas i webbläsarens flik eller fönster.</p>
+            </div>
+            <div class="content">
+                <p>&ltStyle&gt</p><p>Används för att inbädda interna stilmallar (CSS) direkt i dokumentet.</p>
+            </div>
+            <div class="content">
+                <p>&ltMain&gt</p><p>Används för att definiera huvudinnehållet på en webbsida.</p>
+            </div>
+            <div>
+                <h3 #semantiska>SEMANTISKA ELEMENT</h3>
+            </div>  
+            <div class="content">
+                <p>&ltHeader&gt</p><p>Används för att definiera sidans huvudsektion, vanligtvis innehållande rubriker, logotyper och navigationsmenyer.</p>
+            </div>
+            <div class="content">
+                <p>&ltLink&gt</p><p>Används för att länka till externa stilmallar (CSS) eller andra resurser.</p>
+            </div>
+            <div class="content">
+                <p>&ltBody&gt</p><p>Innehåller det synliga innehållet på webbsidan, såsom text, bilder och andra element.</p>
+            </div>
+            <div class="content">
+                <p>&ltp&gt</p><p>Skapar en styckeavsnittstext.</p>
+            </div>
+            <div class="content">
+                <p>&ltheadings&gt</p><p>(&lth1&gt-&lth6&gt) Skapar rubriker med olika hierarkiska nivåer, där h1 är den högsta nivån och h6 är den lägsta.</p>
+            </div>
+            <div class="content">
+                <p>&ltol&gt</p><p>Skapar en ordnad lista, där listobjekten numreras.</p>
+            </div>
+            <div class="content">
+                <p>&ltul&gt</p><p>Skapar en oordnad lista, där listobjekten inte har någon särskild ordning.</p>
+            </div>
+            <div class="content">
+                <p>&ltli&gt</p><p>Används inuti listelementen (ol eller ul) för att skapa individuella listobjekt.</p>
+            </div>
+            <div class="content">
+                <p>&ltstrong&gt</p><p>  Används för att markera text som bör vara extra betonad och oftast visas fett.</p>
+            </div>
+            <div class="content">
+                <p>&ltem&gt</p><p>Används för att betona texten och oftast visas kursivt.</p>
+            </div>
+            <div class="content">
+                <p>&lta&gt</p><p>Skapar en länk till en annan webbsida eller resurs.</p>
+            </div>
+            <div class="content">
+                <p>&ltspan&gt</p><p>Ett generiskt in-line element som används för att applicera stilar eller manipulation på en del av en text eller innehåll.</p>
+            </div>
+            <div class="content">
+                <p>&ltsection&gt</p><p>Används för att gruppera innehåll i ett tematiskt block inom dokumentet.</p>
+            </div>
+            <div class="content">
+                <p>&ltfooter&gt</p><p>Används för att definiera sidans fotsektion, vanligtvis innehållande upphovsrättsinformation och kontaktuppgifter.</p>
+            </div>
+            <div class="content">
+                <p>&ltarticle&gt</p><p>Används för att definiera ett oberoende och självständigt innehållsstycke, t.ex. en bloggpost eller en nyhetsartikel.</p>
+            </div>
+            <div class="content">
+                <p>&ltaside&gt</p><p>Används för att definiera sidorutor eller innehåll som är sidbetecknat och inte nödvändigtvis en del av huvudinnehållet.</p>
+            </div>
+            <div class="content">
+                <p>&ltdiv&gt</p><p>Ett generiskt blockelement som används för att gruppera och strukturera innehåll och tillämpa stilar.</p>
+            </div>
+        </section>
+        <aside class="gruNav">
+            <div class="list">
+                <h3 class="list-header">Innehåll</h3>
+                <ol class="categories">
+                        <li class="html"><p>HTML</p>
+                        <ol>
+                            <li><a href="#struktur">Struktur</a></li>
+                            <li><a href="#semantiska">Semantiska element</a></li>
+                            <li>Text & rubriker</li>
+                            <li>Layout</li>
+                        </ol>   
+                    </li>
+                    <li class="css">CSS
+                        <ol>
+                            <li>Typsnitt</li>
+                            <li>Färger</li>
+                            <li>layout</li>
+                            <li>Effekter</li>
+                            <li>Annat</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <script src="scripts/script.js" defer></script>
+</head>
+<style>
+    body {
+        font-family: 'Titillium Web';
+    }
+</style>
+<body class="docs">
+    <header>
+        <div class="topheader">
+            <div class="logo">
+                <img src="/bilder/m2logo.svg" alt="m2logo">
+                <h1>M2</h1>
+            </div>
+            <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+                <svg fill="white" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                    <rect class="line top" width="90" height="10" x="10" y="20" rx="5"></rect>
+                    <rect class="line middle" width="90" height="10" x="10" y="45" rx="5"></rect>
+                    <rect class="line bottom" width="90" height="10" x="10" y="70" rx="5"></rect>
+                </svg>
+            </button>
+            <ul class="primary-navigation" id="primary-navigation">
+                <li><a href="/index.html">Hem</a></li>
+                <li><a href="/Grunderna.html">Grunderna</a></li>
+                <li><a href="/Historia.html">Historia</a></li>
+                <li><a href="/DOM.html" class="selected">DOM</a></li>
+                <li><a href="/Form.html">Kontakta oss</a></li>
+                <li><a href="#om_mig">Om mig</a></li> 
+            </ul>
+        </div>
+    </header>
+    <div class="domUpper">
+        <div class="inover">
+            <div class="text">
+                <h1>Document object model</h1>
+                <p>DOM, Document Object Model, är ett programmeringsgränssnitt för webbläsare som representerar webbsidors struktur som en trädstruktur av noder.</p>
+            </div>
+            <div>
+                <img src="/Bilder/1200px-DOM-model.svg.png" alt="dom-example" class="dom-example">
+            </div>
+        </div>
+    </div>
+    <main class="domMain">
+        <div class="domText">
+            <p>DOM, eller Document Object Model, är ett programmeringsgränssnitt som tillhandahåller en strukturerad representation av dokumentet (vanligtvis en HTML- eller XML-fil) som en trädstruktur av noder. Varje element, attribut och text i dokumentet representeras som en nod i trädet. DOM möjliggör dynamisk interaktion med webbsidor genom att tillåta utvecklare att skapa, ändra och ta bort element och innehåll i realtid med hjälp av programmeringsspråk som JavaScript.</p>
+            
+            <p>Genom att använda DOM kan utvecklare dynamiskt ändra strukturen, stilen och innehållet på en webbsida baserat på användarinteraktion eller andra händelser. Till exempel kan man lägga till nya element, ändra textinnehåll, ändra stilar och reagera på användarinteraktion som klick eller hovring över element.</p>
+            
+            <p>DOM består av olika nivåer och gränssnitt som ger olika sätt att interagera med dokumentet. Det vanligaste är att använda DOM-nivå 3, som erbjuder omfattande funktioner för att navigera, manipulera och modifiera dokumentet på olika sätt. DOM är en central del av webbutveckling och är avgörande för att skapa interaktiva och dynamiska webbsidor.</p>
+        </div>
+    </main>
+</body>
+</html>
