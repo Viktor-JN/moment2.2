@@ -257,4 +257,10 @@ fieldset{
    .gruNav{
     display: none;
    }
+   .history{
+    columns: 1;
+   }
+   .domText{
+    columns: 1;
+   }
  }
